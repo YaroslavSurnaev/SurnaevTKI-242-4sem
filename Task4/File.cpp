@@ -12,7 +12,7 @@ struct point {
     double x, y;
     string s;
 
-    point(double x = 0, double y = 0, string s = "") : x(x), y(y), s(s) {}
+    point(const double x = 0, const double y = 0, const string s = "") : x(x), y(y), s(s) {}
 
     operator string() const {
         return to_string(x) + " " + to_string(y) + " " + s;
